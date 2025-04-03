@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты TF-IDF</title>
+</head>
+<body>
+    <h1>Топ 50 слов по TF-IDF</h1>
+    {% for table in tables %}
+        {{ titles[0] }}<br>
+        {{ table|safe }}
+        <br><br>
+    {% endfor %}
+</body>
+</html>
